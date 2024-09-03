@@ -1,0 +1,52 @@
+:root {
+
+    /* Primary */
+    --redColor: hsl(0, 78%, 62%);
+    --cyanColor: hsl(180, 62%, 55%);
+    --orangeColor: hsl(34, 97%, 64%);
+    --blueColor: hsl(212, 86%, 64%);
+
+    /* Neutral */
+    --veryDarkBlueColor: hsl(234, 12%, 34%);
+    --grayishBlueColor: hsl(229, 6%, 66%);
+    --veryLightGrayColor: hsl(0, 0%, 98%);
+}
+
+*,
+*::before,
+*::after {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300; /* 100-900 */
+    font-style: normal; /* normal or italic */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
