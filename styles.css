@@ -31,7 +31,6 @@ body {
 }
 
 .container{
-    border: 2px solid black;
     max-width: 375px;
     margin: auto;
     padding: 5.5rem 2rem 5rem 2rem; /* 88px 32px 80px 32px */
