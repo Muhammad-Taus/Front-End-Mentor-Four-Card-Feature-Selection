@@ -23,9 +23,46 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 300; /* 100-900 */
+    font-weight: 400; /* 100-900 */
     font-style: normal; /* normal or italic */
+    font-size: 15px;
+    color: var(--grayishBlueColor);
 }
+
+.container{
+    border: 2px solid black;
+    max-width: 375px;
+    margin: auto;
+    padding: 88px 32px 80px 32px;
+}
+
+/* Header Section Start */
+
+h1{
+    font-size: 24px;
+}
+
+h1,h2{
+    font-weight: 400;
+}
+
+h1 span,h2{
+    color: var(--veryDarkBlueColor);
+    font-weight: 600;
+}
+
+header p{
+    padding: 36px 0 80px 0;
+}
+
+/* Header Section End */
+
+
+
+/* Main Section Start */
+
+
+
 
 
 
