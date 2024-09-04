@@ -25,7 +25,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400; /* 100-900 */
     font-style: normal; /* normal or italic */
-    font-size: 15px;
+    font-size: 0.938rem; /* 15px */
     background-color: var(--veryLightGrayColor);
     color: var(--grayishBlueColor);
 }
@@ -34,13 +34,13 @@ body {
     border: 2px solid black;
     max-width: 375px;
     margin: auto;
-    padding: 88px 32px 80px 32px;
+    padding: 5.5rem 2rem 5rem 2rem; /* 88px 32px 80px 32px */
 }
 
 /* Header Section Start */
 
 h1{
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px */
 }
 
 h1,h2{
@@ -53,7 +53,7 @@ h1 span,h2{
 }
 
 header p{
-    padding: 36px 0 80px 0;
+    padding: 2.25rem 0 5rem 0;
 }
 
 /* Header Section End */
@@ -62,10 +62,14 @@ header p{
 
 /* Main Section Start */
 
+main{
+    display: grid;
+    gap: 1.5rem;
+}
+
 .card{
-    padding: 30px;
-    font-size: 14px;
-    margin-bottom: 25px;
+    padding: 1.875rem; /* 30px */
+    font-size: 0.875rem; /* 14px */
     border-radius: 5px;
     background-color: white;
     box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15);
@@ -88,20 +92,81 @@ header p{
 }
 
 .card p{
-    margin-top: 14px;
-    font-size: 12px;
+    margin-top: 0.875rem; /* 14px */
+    font-size: 0.75rem; /* 12px */
 }
 
 .card img{
-    width: 60px;
-    height: 60px;
-    margin-top: 40px;
+    width: 3.75rem; /* 60px */
+    height: 3.75rem; /* 60px */
+    margin-top: 2.5rem; /* 40px */
     margin-left: auto;
     display: block;
 }
 
+/* Main Section End */
 
 
+/* Media Queries */
+
+@media all and (min-width: 800px) {
+    .container{
+        max-width: 760px;
+    }
+
+    header{
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+
+    main{
+        grid-template-areas: 
+        'one two'
+        'three four';
+        grid-auto-columns: 1fr;
+    }
+
+    .card:nth-child(1){
+        grid-area: one;
+    }
+
+    .card:nth-child(2){
+        grid-area: two;
+    }
+
+    .card:nth-child(3){
+        grid-area: three;
+    }
+
+    .card:nth-child(4){
+        grid-area: four;
+    }
+
+}
+
+
+
+@media all and (min-width: 1200px) {
+    .container{
+        max-width: 1000px;
+    }
+
+    header{
+        max-width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+
+    main{
+        grid-template-areas: 
+        '... two ...'
+        'one two four'
+        'one three four'
+        '... three ...';
+    }
+
+}
 
 
 
