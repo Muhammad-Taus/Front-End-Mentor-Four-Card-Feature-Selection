@@ -26,6 +26,7 @@ body {
     font-weight: 400; /* 100-900 */
     font-style: normal; /* normal or italic */
     font-size: 15px;
+    background-color: var(--veryLightGrayColor);
     color: var(--grayishBlueColor);
 }
 
@@ -61,10 +62,43 @@ header p{
 
 /* Main Section Start */
 
+.card{
+    padding: 30px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100 / 0.15);
+}
 
+.card.one{
+    border-top: 4px solid var(--cyanColor);
+}
 
+.card.two{
+    border-top: 4px solid var(--redColor);
+}
 
+.card.three{
+    border-top: 4px solid var(--orangeColor);
+}
 
+.card.four{
+    border-top: 4px solid var(--blueColor);
+}
+
+.card p{
+    margin-top: 14px;
+    font-size: 12px;
+}
+
+.card img{
+    width: 60px;
+    height: 60px;
+    margin-top: 40px;
+    margin-left: auto;
+    display: block;
+}
 
 
 
